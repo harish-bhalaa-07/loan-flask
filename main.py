@@ -6,7 +6,7 @@ import os
 os.chdir('./')
 
 app=Flask(__name__)
-model=pickle.load(open('loan_prediction_model.pkl','rb'))
+model=pickle.load(open('loan.pkl','rb'))
 
 
 @app.route('/')
